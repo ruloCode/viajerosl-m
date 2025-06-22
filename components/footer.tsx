@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -45,11 +47,11 @@ export default function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-brand-turquoise mr-3" />
-                <span>+57 300 123 4567</span>
+                <span>+573215801141</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-brand-turquoise mr-3" />
-                <span>info@viajeroslm.com</span>
+                <span>viajeroslym@gmail.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-brand-turquoise mr-3 mt-1" />
@@ -192,6 +194,7 @@ export default function Footer() {
           size="lg"
           className="bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 shadow-lg"
           aria-label="Contactar por WhatsApp"
+          onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me gustaría información sobre los tours al Pacífico colombiano.', '_blank')}
         >
           <Phone className="h-6 w-6" />
         </Button>

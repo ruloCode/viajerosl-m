@@ -25,9 +25,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <iframe
-            src="https://www.youtube.com/embed/AdJ8bIyYxnc?si=jvFep7DT58IPrWnE&autoplay=1&mute=1&loop=1&playlist=AdJ8bIyYxnc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=6"
+            src="https://www.youtube.com/embed/AdJ8bIyYxnc?si=jvFep7DT58IPrWnE&autoplay=1&mute=1&loop=1&playlist=AdJ8bIyYxnc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=6&end=54"
             title="Pacífico Colombiano Background"
-            className="absolute inset-0 w-full h-full object-cover scale-150 md:scale-125 blur-sm mobile-video-bg"
+            className="absolute inset-0 w-full h-full object-cover scale-150 md:scale-125  mobile-video-bg"
             style={{
               minWidth: '100%',
               minHeight: '100%',
@@ -40,8 +40,8 @@ export default function Hero() {
             allowFullScreen={false}
           />
         </div>
-        <div className="absolute inset-0 bg-black/70 md:bg-black/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/80 md:from-black/20 md:via-black/50 md:to-black/70"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
       </div>
 
       {/* Contenido principal */}
@@ -59,7 +59,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-brand-coral hover:bg-orange-600 text-white px-8 py-4 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-brand-coral hover:bg-orange-600 text-white px-8 py-4 text-lg"
+              onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me interesa reservar un tour al Pacífico colombiano. ¿Podrían ayudarme con información?', '_blank')}
+            >
               <Calendar className="mr-2 h-5 w-5" />
               Reservar Ahora
             </Button>

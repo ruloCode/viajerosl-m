@@ -184,7 +184,7 @@ export default function Packages() {
                 <div className="space-y-2">
                   <Button
                     className="w-full bg-brand-turquoise hover:bg-teal-700 text-white"
-                    onClick={() => handleBooking(pkg)}
+                    onClick={() => window.open(`https://wa.me/573215801141?text=¡Hola! Me interesa el paquete "${pkg.name}" por ${pkg.duration}. ¿Podrían darme más información?`, '_blank')}
                   >
                     <Users className="mr-2 h-4 w-4" />
                     Reservar Ahora
@@ -192,6 +192,7 @@ export default function Packages() {
                   <Button
                     variant="outline"
                     className="w-full text-brand-turquoise border-brand-turquoise hover:bg-brand-turquoise/10"
+                    onClick={() => window.open(`https://wa.me/573215801141?text=¡Hola! Quisiera conocer más detalles sobre el paquete "${pkg.name}". ¿Podrían ayudarme?`, '_blank')}
                   >
                     <MapPin className="mr-2 h-4 w-4" />
                     Ver Detalles
@@ -214,6 +215,7 @@ export default function Packages() {
               size="lg"
               variant="outline"
               className="bg-white text-brand-turquoise border-brand-turquoise hover:bg-brand-turquoise/10"
+              onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me gustaría solicitar una cotización personalizada para un viaje al Pacífico colombiano. ¿Podrían ayudarme?', '_blank')}
             >
               Solicitar Cotización Personalizada
             </Button>

@@ -28,11 +28,11 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+57 300 123 4567</span>
+              <span>+573215801141</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
-              <span>info@viajeroslm.com</span>
+              <span>viajeroslym@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -68,10 +68,19 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" className="bg-white text-brand-turquoise border-brand-turquoise hover:bg-teal-50">
+            <Button 
+              variant="outline" 
+              className="bg-white text-brand-turquoise border-brand-turquoise hover:bg-teal-50"
+              onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me gustaría cotizar un viaje al Pacífico colombiano. ¿Podrían ayudarme?', '_blank')}
+            >
               Cotizar Viaje
             </Button>
-            <Button className="bg-brand-coral hover:bg-orange-600 text-white">Reservar Ahora</Button>
+            <Button 
+              className="bg-brand-coral hover:bg-orange-600 text-white"
+              onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me interesa reservar un tour al Pacífico colombiano. ¿Podrían ayudarme con información?', '_blank')}
+            >
+              Reservar Ahora
+            </Button>
           </div>
 
           {/* Menú móvil */}
@@ -95,10 +104,19 @@ export default function Header() {
                   </Link>
                 ))}
                 <div className="pt-4 space-y-2">
-                  <Button variant="outline" className="w-full bg-white text-brand-turquoise border-brand-turquoise">
+                  <Button 
+                    variant="outline" 
+                    className="w-full bg-white text-brand-turquoise border-brand-turquoise"
+                    onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me gustaría cotizar un viaje al Pacífico colombiano. ¿Podrían ayudarme?', '_blank')}
+                  >
                     Cotizar Viaje
                   </Button>
-                  <Button className="w-full bg-brand-coral hover:bg-orange-600 text-white">Reservar Ahora</Button>
+                  <Button 
+                    className="w-full bg-brand-coral hover:bg-orange-600 text-white"
+                    onClick={() => window.open('https://wa.me/573215801141?text=¡Hola! Me interesa reservar un tour al Pacífico colombiano. ¿Podrían ayudarme con información?', '_blank')}
+                  >
+                    Reservar Ahora
+                  </Button>
                 </div>
               </div>
             </SheetContent>
